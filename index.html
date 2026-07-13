@@ -15,12 +15,13 @@
   <header class="site-header">
     <div class="container nav">
       <a class="brand" href="#home">
-        <img src="assets/images/logo.png" alt="Nereids Voyaging logo">
+        <img src="logo.png" alt="Nereids Voyaging logo">
         <span>Nereids Voyaging</span>
       </a>
       <nav>
         <a href="#boat">The Boat</a>
         <a href="#trips">Trips</a>
+        <a href="#gallery">Gallery</a>
         <a href="#contact" class="nav-cta">WhatsApp</a>
       </nav>
     </div>
@@ -28,6 +29,9 @@
 
   <main>
     <section class="hero" id="home">
+      <video class="hero-video" autoplay muted loop playsinline poster="navagio.jpg">
+        <source src="kymothoe-hero.mp4" type="video/mp4">
+      </video>
       <div class="hero-overlay"></div>
       <div class="container hero-content">
         <p class="eyebrow">Private boat experiences from Zakynthos Port</p>
@@ -44,9 +48,9 @@
 
     <section class="section" id="boat">
       <div class="container two-column">
-        <div class="image-placeholder boat-image">
-          <span>Kymothoe photo coming soon</span>
-        </div>
+        <figure class="photo-card">
+          <img src="sunset.jpg" alt="Kymothoe cruising near Zakynthos at sunset">
+        </figure>
         <div>
           <p class="section-label">Meet Kymothoe</p>
           <h2>Comfortable, modern and made for memorable days at sea.</h2>
@@ -58,7 +62,7 @@
             <div><strong>8 m</strong><span>Length</span></div>
             <div><strong>9 guests</strong><span>Plus captain</span></div>
             <div><strong>Brand new</strong><span>Modern comfort</span></div>
-            <div><strong>Captain included</strong><span>Licensed skipper</span></div>
+            <div><strong>2 × 150 HP</strong><span>Honda engines</span></div>
           </div>
         </div>
       </div>
@@ -118,6 +122,25 @@
       </div>
     </section>
 
+    <section class="section" id="gallery">
+      <div class="container">
+        <p class="section-label">A day aboard Kymothoe</p>
+        <h2>Zakynthos looks different from the sea.</h2>
+        <div class="gallery-grid">
+          <figure class="gallery-large">
+            <img src="navagio.jpg" alt="View of Navagio from Kymothoe">
+          </figure>
+          <figure>
+            <img src="sunset-wide.jpg" alt="Kymothoe wake at sunset near Zakynthos">
+          </figure>
+          <div class="gallery-message">
+            <span>Private. Flexible. Unforgettable.</span>
+            <p>Your route is planned according to your preferences, availability and sea conditions.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <section class="section soft-bg" id="contact">
       <div class="container two-column">
         <div>
@@ -129,8 +152,13 @@
           </p>
           <a class="button primary" href="https://wa.me/306982987323?text=Hello%20Nereids%20Voyaging%2C%20I%20would%20like%20to%20check%20availability." target="_blank" rel="noopener">Message us on WhatsApp</a>
         </div>
-        <div class="map-placeholder">
-          <span>Google Maps pin will be added here</span>
+        <div class="map-card">
+          <iframe
+            title="Port of Zakynthos map"
+            src="https://www.google.com/maps?q=Port%20of%20Zakynthos&output=embed"
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade">
+          </iframe>
         </div>
       </div>
     </section>
